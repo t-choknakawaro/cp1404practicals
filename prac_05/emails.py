@@ -4,8 +4,8 @@ while True:
     if not email:
         break
     name = email.split('@')[0].replace('.', ' ').title()
-    confirmation = input(f"Is your name {name}? (Y/n) ").lower()
-    if confirmation and confirmation[0] == 'n':
+    check = input(f"Is your name {name}? (Y/n) ").lower()
+    if check and check[0] == 'n':
         name = input("Enter name: ")
     emails[email] = name
 
