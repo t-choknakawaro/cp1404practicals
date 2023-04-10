@@ -1,5 +1,5 @@
 word_to_count = {}
-text = input('Enter text: ')
+text = input('Text: ')
 words = text.split()
 for word in words:
     frequency = word_to_count.get(word, 0)
