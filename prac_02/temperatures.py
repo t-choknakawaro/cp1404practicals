@@ -4,6 +4,7 @@ Q - Quit"""
 
 
 def main():
+    """Get fahrenheit and celsius and convert them to another degree"""
     print(MENU)
     choice = input('>>> ').upper()
     while choice != 'Q':
@@ -23,11 +24,13 @@ def main():
 
 
 def convert_celsius_to_fahrenheit(celsius):
+    """Convert the input celsius to fahrenheit"""
     fahrenheit = celsius * 9.0 / 5 + 32
     return fahrenheit
 
 
 def convert_fahrenheit_to_celsius(fahrenheit):
+    """Convert the input fahrenheit to celsius"""
     celsius = 5 / 9 * (fahrenheit - 32)
     return celsius
 
