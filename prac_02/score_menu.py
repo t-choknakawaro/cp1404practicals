@@ -37,7 +37,7 @@ def get_valid_score():
 
 
 def print_result(score):
-    """Print result of the score as a grade"""
+    """Print result of the score as a grade."""
     if score < MIN_SCORE or score > MAX_SCORE:
         return 'Invalid score'
     elif score >= EXCELLENT_SCORE:
@@ -49,7 +49,7 @@ def print_result(score):
 
 
 def show_star(score):
-    """Print stars as the score"""
+    """Print stars as the score."""
     return '*' * score
 
 
