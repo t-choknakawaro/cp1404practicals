@@ -1,5 +1,6 @@
 word_to_count = {}
-text = 'this is a collection of words of nice words this is a fun thing it is'
+# text = 'this is a collection of words of nice words this is a fun thing it is'
+text = input('Enter text: ')
 words = text.split()
 
 for word in words:
