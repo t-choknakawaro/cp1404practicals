@@ -1,5 +1,6 @@
 
 def main():
+    """get an email from the user and return it with their name."""
     email_to_name = {}
     email = input('Email: ')
     while email != '':
@@ -15,6 +16,7 @@ def main():
 
 
 def get_name_from_email(email):
+    """split user email."""
     name = email.split('@')[0].replace('.', ' ').title()
     return name
 
