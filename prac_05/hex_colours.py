@@ -14,3 +14,4 @@ while color_name != '':
 for color_name, color_code in CODE_TO_NAME.items():
     print(f'color code of {color_name} is {color_code}')
 
+
