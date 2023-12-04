@@ -10,11 +10,11 @@ print(CODE_TO_NAME)
 
 state_code = input("Enter short state: ").upper()
 while state_code != "":
-    if state_code in CODE_TO_NAME:
+    try:
         print(state_code, "is", CODE_TO_NAME[state_code])
-    else:
+    except KeyError:
         print("Invalid short state")
-    state_code = input("Enter short state: ")
+    state_code = input("Enter short state: ").upper()
 
 for abbreviation, name in CODE_TO_NAME.items():
     print(f'{abbreviation:3s} is {name}')
